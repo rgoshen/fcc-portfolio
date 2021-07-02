@@ -1,0 +1,62 @@
+/* Custom properties */
+:root {
+  --blue: #0c3866;
+  --aqua: #49c0b6;
+  --black: #222;
+  --red: #ce181e;
+  --lt-blue: #007cc0;
+  --gold: #ffc20e;
+}
+
+/* Base reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* box-sizing and font sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  scroll-bahvior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+}
+
+/* Welcome Section */
+#welcome-section {
+  background-color: var(--red);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  line-height: 2;
+  text-align: center;
+  width: 100%;
+}
+
+#welcome-section p {
+  color: var(--black);
+}
+
+/* Projects Section */
+#projects {
+  background-color: var(--blue);
+  padding: 10rem 2rem;
+  text-align: center;
+}
+
+.projects-section-title {
+  color: var(--lt-blue);
+  border-bottom: 0.2rem solid var(--lt-blue);
+  max-width: 640rem;
+}
