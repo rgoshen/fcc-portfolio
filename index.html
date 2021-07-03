@@ -7,13 +7,21 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./style.css" />
 
-    <!-- Fonts -->
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200&display=swap"
       rel="stylesheet"
+    />
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
 
     <title>FCC-Portfolio</title>
@@ -29,7 +37,7 @@
           <a href="#projects">Work</a>
         </li>
         <li class="item">
-          <a href="#">Contact</a>
+          <a href="#contact">Contact</a>
         </li>
       </ul>
     </nav>
@@ -48,7 +56,7 @@
       <div class="projects-grid">
         <a
           href="https://rgoshen.github.io/tribute_page/"
-          class="project-card"
+          class="project-tile"
           target="_blank"
         >
           <img src="./imgs/fcc-tribute-pg.png" alt="tribute page" />
@@ -58,7 +66,7 @@
         </a>
         <a
           href="https://rgoshen.github.io/landing_page/"
-          class="project-card"
+          class="project-tile"
           target="_blank"
         >
           <img src="./imgs/fcc-landing-pg.png" alt="landing page" />
@@ -69,6 +77,39 @@
       </div>
     </section>
     <!-- END PROJECTS SECTION -->
+
+    <!-- START CONTACT SECTION -->
+    <section id="contact">
+      <div class="contact-section-header">
+        <h2>Let's work together...</h2>
+        <p>How do you take your coffee?</p>
+      </div>
+      <div class="contact-links">
+        <a
+          href="https://www.facebook.com/rick.goshen/"
+          target="_blank"
+          class="btn contact-details"
+          ><i class="fab fa-facebook-square"></i> Facebook</a
+        >
+        <a
+          id="profile-link"
+          href="https://github.com/rgoshen"
+          target="_blank"
+          class="btn contact-details"
+          ><i class="fab fa-github"></i> GitHub</a
+        >
+        <a
+          href="https://twitter.com/RickGoshen"
+          target="_blank"
+          class="btn contact-details"
+          ><i class="fab fa-twitter"></i> Twitter</a
+        >
+        <a href="mailto:example@example.com" class="btn contact-details"
+          ><i class="fas fa-at"></i> Send an email</a
+        >
+      </div>
+    </section>
+    <!-- END CONTACT SECTION -->
 
     <!-- FCC Testing Script -->
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
