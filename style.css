@@ -24,18 +24,55 @@
 }
 
 html {
-  font-size: 10px;
+  /*
+  Set font size for easy rem calculations
+  default document font size = 16px, 1rem = 16px, 100% = 16px
+  (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
+  */
+  font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
 body {
   font-family: "Poppins", sans-serif;
   font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+h1,
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 4.2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-white);
+}
+
+img {
+  display: block;
+  width: 100%;
 }
 
 /* Nav */
 #navbar {
   background-color: black;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
   display: flex;
   justify-content: flex-end;
   position: fixed;
@@ -52,7 +89,7 @@ body {
 
 .item {
   display: block;
-  font-size: 2rem;
+  font-size: 2.2rem;
   padding: 2rem;
 }
 
@@ -80,12 +117,14 @@ body {
 
 #welcome-section p {
   color: var(--black);
+  font-size: 3rem;
+  font-weight: 200;
+  font-style: italic;
 }
 
 /* Projects Section */
 #projects {
   background-color: var(--blue);
-  height: 80vh;
   padding: 10rem 2rem;
   text-align: center;
 }
@@ -93,8 +132,8 @@ body {
 .projects-section-title {
   color: var(--gold);
   border-bottom: 0.2rem solid var(--gold);
-  margin-bottom: 2rem;
-  max-width: 640rem;
+  margin: 0 auto 6rem auto;
+  max-width: 640px;
 }
 
 .projects-grid {
@@ -125,10 +164,14 @@ body {
 
 .project-tile img {
   border-radius: 5px 5px 0 0;
+  height: calc(100% - 6.8rem);
+  object-fit: cover;
   width: 100%;
 }
 
 .card-title {
+  font-size: 2rem;
+  padding: 2rem 0.5rem;
   color: var(--gold);
 }
 
@@ -146,7 +189,7 @@ body {
 }
 
 .contact-section-header h2 {
-  font-size: 4rem;
+  font-size: 6rem;
 }
 
 .contact-section-header p {
@@ -171,4 +214,68 @@ body {
 
 .contact-details:hover {
   transform: translateY(8px);
+}
+
+/* Responsive Font-size */
+
+/* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+  html {
+    font-size: 60%;
+  }
+}
+
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+  html {
+    font-size: 58%;
+  }
+}
+
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
+  html {
+    font-size: 55%;
+  }
+}
+
+/* Responsive Navbar */
+
+@media (max-width: 28.75em) {
+  #navbar {
+    justify-content: center;
+  }
+
+  .nav-list {
+    margin: 0 1rem;
+  }
+}
+
+/* Responsive Projects section */
+@media (max-width: 30.625em) {
+  #projects {
+    padding: 6rem 1rem;
+  }
+
+/* Responsive Projects Section Header */
+@media (max-width: 28.75em) {
+  .projects-section-header {
+    font-size: 4rem;
+  }
+}
+
+/* Responsive Projects Grid */
+@media (max-width: 35.81em) {
+  .projects-grid {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Responsive Contact Section Header */
+@media (max-width: 28.75em) {
+  .contact-section-header h2 {
+    font-size: 4rem;
+  }
 }
