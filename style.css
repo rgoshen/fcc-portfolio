@@ -56,7 +56,43 @@ body {
 }
 
 .projects-section-title {
-  color: var(--lt-blue);
-  border-bottom: 0.2rem solid var(--lt-blue);
+  color: var(--gold);
+  border-bottom: 0.2rem solid var(--gold);
+  margin-bottom: 2rem;
   max-width: 640rem;
+}
+
+.projects-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+  width: 100%;
+}
+
+.project-card {
+  background-color: var(--lt-blue);
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin: 2rem;
+  max-width: 25rem;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  /* On mouse-over, add a deeper shadow */
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+}
+
+.card-title {
+  color: var(--gold);
 }
