@@ -10,8 +10,10 @@
 
 /* Base reset */
 * {
+  color: white;
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 /* box-sizing and font sizing */
@@ -23,12 +25,39 @@
 
 html {
   font-size: 10px;
-  scroll-bahvior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: "Poppins", sans-serif;
   font-size: 1.8rem;
+}
+
+/* Nav */
+#navbar {
+  background-color: black;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.nav-menu {
+  display: flex;
+  margin-right: 2rem;
+}
+
+.item {
+  display: block;
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+.item:hover {
+  background: var(--lt-blue);
 }
 
 /* Welcome Section */
